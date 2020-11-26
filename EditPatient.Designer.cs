@@ -64,7 +64,7 @@ namespace HMSV2
             // 
             // tbCountry
             // 
-            this.tbCountry.Location = new System.Drawing.Point(707, 202);
+            this.tbCountry.Location = new System.Drawing.Point(707, 182);
             this.tbCountry.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbCountry.Name = "tbCountry";
             this.tbCountry.Size = new System.Drawing.Size(355, 26);
@@ -74,7 +74,7 @@ namespace HMSV2
             // 
             this.labelCountry.AutoSize = true;
             this.labelCountry.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelCountry.Location = new System.Drawing.Point(581, 202);
+            this.labelCountry.Location = new System.Drawing.Point(581, 182);
             this.labelCountry.Name = "labelCountry";
             this.labelCountry.Size = new System.Drawing.Size(71, 21);
             this.labelCountry.TabIndex = 44;
@@ -82,7 +82,7 @@ namespace HMSV2
             // 
             // tbZip
             // 
-            this.tbZip.Location = new System.Drawing.Point(707, 148);
+            this.tbZip.Location = new System.Drawing.Point(707, 136);
             this.tbZip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbZip.Name = "tbZip";
             this.tbZip.Size = new System.Drawing.Size(355, 26);
@@ -92,7 +92,7 @@ namespace HMSV2
             // 
             this.labelZip.AutoSize = true;
             this.labelZip.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelZip.Location = new System.Drawing.Point(581, 150);
+            this.labelZip.Location = new System.Drawing.Point(581, 138);
             this.labelZip.Name = "labelZip";
             this.labelZip.Size = new System.Drawing.Size(86, 21);
             this.labelZip.TabIndex = 43;
@@ -100,7 +100,7 @@ namespace HMSV2
             // 
             // tbCity
             // 
-            this.tbCity.Location = new System.Drawing.Point(707, 99);
+            this.tbCity.Location = new System.Drawing.Point(707, 91);
             this.tbCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbCity.Name = "tbCity";
             this.tbCity.Size = new System.Drawing.Size(355, 26);
@@ -110,7 +110,7 @@ namespace HMSV2
             // 
             this.labelCity.AutoSize = true;
             this.labelCity.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelCity.Location = new System.Drawing.Point(581, 101);
+            this.labelCity.Location = new System.Drawing.Point(581, 93);
             this.labelCity.Name = "labelCity";
             this.labelCity.Size = new System.Drawing.Size(41, 21);
             this.labelCity.TabIndex = 42;
@@ -284,7 +284,7 @@ namespace HMSV2
             // 
             this.labelAdmitted.AutoSize = true;
             this.labelAdmitted.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelAdmitted.Location = new System.Drawing.Point(581, 251);
+            this.labelAdmitted.Location = new System.Drawing.Point(581, 230);
             this.labelAdmitted.Name = "labelAdmitted";
             this.labelAdmitted.Size = new System.Drawing.Size(79, 21);
             this.labelAdmitted.TabIndex = 45;
@@ -293,7 +293,7 @@ namespace HMSV2
             // cbAdmitted
             // 
             this.cbAdmitted.FormattingEnabled = true;
-            this.cbAdmitted.Location = new System.Drawing.Point(707, 249);
+            this.cbAdmitted.Location = new System.Drawing.Point(707, 228);
             this.cbAdmitted.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbAdmitted.Name = "cbAdmitted";
             this.cbAdmitted.Size = new System.Drawing.Size(355, 27);
@@ -314,7 +314,7 @@ namespace HMSV2
             // 
             this.labelSex.AutoSize = true;
             this.labelSex.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelSex.Location = new System.Drawing.Point(12, 459);
+            this.labelSex.Location = new System.Drawing.Point(12, 458);
             this.labelSex.Name = "labelSex";
             this.labelSex.Size = new System.Drawing.Size(38, 21);
             this.labelSex.TabIndex = 48;
@@ -333,7 +333,7 @@ namespace HMSV2
             // 
             this.labelDoctor.AutoSize = true;
             this.labelDoctor.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelDoctor.Location = new System.Drawing.Point(581, 287);
+            this.labelDoctor.Location = new System.Drawing.Point(581, 277);
             this.labelDoctor.Name = "labelDoctor";
             this.labelDoctor.Size = new System.Drawing.Size(63, 21);
             this.labelDoctor.TabIndex = 50;
@@ -341,7 +341,7 @@ namespace HMSV2
             // 
             // tbDoctor
             // 
-            this.tbDoctor.Location = new System.Drawing.Point(707, 287);
+            this.tbDoctor.Location = new System.Drawing.Point(707, 275);
             this.tbDoctor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbDoctor.Name = "tbDoctor";
             this.tbDoctor.Size = new System.Drawing.Size(355, 26);

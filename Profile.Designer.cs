@@ -42,6 +42,18 @@ namespace HMSV2
             this.labeluname = new System.Windows.Forms.Label();
             this.labelFirstName = new System.Windows.Forms.Label();
             this.labelLastName = new System.Windows.Forms.Label();
+            this.labelCurrentPassword = new System.Windows.Forms.Label();
+            this.tbCurrentPassword = new System.Windows.Forms.TextBox();
+            this.labelSecurityQuestion = new System.Windows.Forms.Label();
+            this.cbSecQue1 = new System.Windows.Forms.ComboBox();
+            this.cbSecQue2 = new System.Windows.Forms.ComboBox();
+            this.labelSecQue2 = new System.Windows.Forms.Label();
+            this.cbSecQue3 = new System.Windows.Forms.ComboBox();
+            this.labelSec3 = new System.Windows.Forms.Label();
+            this.tbSecQue1 = new System.Windows.Forms.TextBox();
+            this.tbSecQue2 = new System.Windows.Forms.TextBox();
+            this.tbSecQue3 = new System.Windows.Forms.TextBox();
+            this.btUpdateSecQue = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,25 +80,25 @@ namespace HMSV2
             // 
             this.labelPwd.AutoSize = true;
             this.labelPwd.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelPwd.Location = new System.Drawing.Point(23, 324);
+            this.labelPwd.Location = new System.Drawing.Point(22, 593);
             this.labelPwd.Name = "labelPwd";
-            this.labelPwd.Size = new System.Drawing.Size(84, 21);
+            this.labelPwd.Size = new System.Drawing.Size(123, 21);
             this.labelPwd.TabIndex = 3;
-            this.labelPwd.Text = "Password";
+            this.labelPwd.Text = "New Password";
             // 
             // tbPwd
             // 
-            this.tbPwd.Location = new System.Drawing.Point(180, 319);
+            this.tbPwd.Location = new System.Drawing.Point(180, 588);
             this.tbPwd.Name = "tbPwd";
             this.tbPwd.PasswordChar = '*';
-            this.tbPwd.Size = new System.Drawing.Size(413, 26);
-            this.tbPwd.TabIndex = 4;
+            this.tbPwd.Size = new System.Drawing.Size(412, 26);
+            this.tbPwd.TabIndex = 9;
             // 
             // labelConPwd
             // 
             this.labelConPwd.AutoSize = true;
             this.labelConPwd.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelConPwd.Location = new System.Drawing.Point(23, 374);
+            this.labelConPwd.Location = new System.Drawing.Point(21, 635);
             this.labelConPwd.Name = "labelConPwd";
             this.labelConPwd.Size = new System.Drawing.Size(151, 21);
             this.labelConPwd.TabIndex = 5;
@@ -94,11 +106,11 @@ namespace HMSV2
             // 
             // tbConPwd
             // 
-            this.tbConPwd.Location = new System.Drawing.Point(181, 369);
+            this.tbConPwd.Location = new System.Drawing.Point(180, 633);
             this.tbConPwd.Name = "tbConPwd";
             this.tbConPwd.PasswordChar = '*';
             this.tbConPwd.Size = new System.Drawing.Size(412, 26);
-            this.tbConPwd.TabIndex = 5;
+            this.tbConPwd.TabIndex = 10;
             // 
             // labelLName
             // 
@@ -122,10 +134,10 @@ namespace HMSV2
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(681, 344);
+            this.btnUpdate.Location = new System.Drawing.Point(668, 577);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(139, 46);
-            this.btnUpdate.TabIndex = 10;
+            this.btnUpdate.TabIndex = 11;
             this.btnUpdate.Text = "Update Password";
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
@@ -160,12 +172,127 @@ namespace HMSV2
             this.labelLastName.TabIndex = 13;
             this.labelLastName.Text = "label1";
             // 
+            // labelCurrentPassword
+            // 
+            this.labelCurrentPassword.AutoSize = true;
+            this.labelCurrentPassword.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelCurrentPassword.Location = new System.Drawing.Point(22, 546);
+            this.labelCurrentPassword.Name = "labelCurrentPassword";
+            this.labelCurrentPassword.Size = new System.Drawing.Size(145, 21);
+            this.labelCurrentPassword.TabIndex = 14;
+            this.labelCurrentPassword.Text = "Current Password";
+            // 
+            // tbCurrentPassword
+            // 
+            this.tbCurrentPassword.Location = new System.Drawing.Point(180, 546);
+            this.tbCurrentPassword.Name = "tbCurrentPassword";
+            this.tbCurrentPassword.PasswordChar = '*';
+            this.tbCurrentPassword.Size = new System.Drawing.Size(412, 26);
+            this.tbCurrentPassword.TabIndex = 8;
+            // 
+            // labelSecurityQuestion
+            // 
+            this.labelSecurityQuestion.AutoSize = true;
+            this.labelSecurityQuestion.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelSecurityQuestion.Location = new System.Drawing.Point(21, 296);
+            this.labelSecurityQuestion.Name = "labelSecurityQuestion";
+            this.labelSecurityQuestion.Size = new System.Drawing.Size(157, 21);
+            this.labelSecurityQuestion.TabIndex = 16;
+            this.labelSecurityQuestion.Text = "Security Question 1";
+            // 
+            // cbSecQue1
+            // 
+            this.cbSecQue1.FormattingEnabled = true;
+            this.cbSecQue1.Location = new System.Drawing.Point(180, 294);
+            this.cbSecQue1.Name = "cbSecQue1";
+            this.cbSecQue1.Size = new System.Drawing.Size(412, 27);
+            this.cbSecQue1.TabIndex = 1;
+            // 
+            // cbSecQue2
+            // 
+            this.cbSecQue2.FormattingEnabled = true;
+            this.cbSecQue2.Location = new System.Drawing.Point(180, 337);
+            this.cbSecQue2.Name = "cbSecQue2";
+            this.cbSecQue2.Size = new System.Drawing.Size(412, 27);
+            this.cbSecQue2.TabIndex = 3;
+            // 
+            // labelSecQue2
+            // 
+            this.labelSecQue2.AutoSize = true;
+            this.labelSecQue2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelSecQue2.Location = new System.Drawing.Point(21, 339);
+            this.labelSecQue2.Name = "labelSecQue2";
+            this.labelSecQue2.Size = new System.Drawing.Size(157, 21);
+            this.labelSecQue2.TabIndex = 18;
+            this.labelSecQue2.Text = "Security Question 2";
+            // 
+            // cbSecQue3
+            // 
+            this.cbSecQue3.FormattingEnabled = true;
+            this.cbSecQue3.Location = new System.Drawing.Point(180, 382);
+            this.cbSecQue3.Name = "cbSecQue3";
+            this.cbSecQue3.Size = new System.Drawing.Size(412, 27);
+            this.cbSecQue3.TabIndex = 5;
+            // 
+            // labelSec3
+            // 
+            this.labelSec3.AutoSize = true;
+            this.labelSec3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelSec3.Location = new System.Drawing.Point(21, 384);
+            this.labelSec3.Name = "labelSec3";
+            this.labelSec3.Size = new System.Drawing.Size(157, 21);
+            this.labelSec3.TabIndex = 20;
+            this.labelSec3.Text = "Security Question 3";
+            // 
+            // tbSecQue1
+            // 
+            this.tbSecQue1.Location = new System.Drawing.Point(630, 296);
+            this.tbSecQue1.Name = "tbSecQue1";
+            this.tbSecQue1.Size = new System.Drawing.Size(390, 26);
+            this.tbSecQue1.TabIndex = 2;
+            // 
+            // tbSecQue2
+            // 
+            this.tbSecQue2.Location = new System.Drawing.Point(630, 339);
+            this.tbSecQue2.Name = "tbSecQue2";
+            this.tbSecQue2.Size = new System.Drawing.Size(390, 26);
+            this.tbSecQue2.TabIndex = 4;
+            // 
+            // tbSecQue3
+            // 
+            this.tbSecQue3.Location = new System.Drawing.Point(630, 384);
+            this.tbSecQue3.Name = "tbSecQue3";
+            this.tbSecQue3.Size = new System.Drawing.Size(390, 26);
+            this.tbSecQue3.TabIndex = 6;
+            // 
+            // btUpdateSecQue
+            // 
+            this.btUpdateSecQue.Location = new System.Drawing.Point(553, 449);
+            this.btUpdateSecQue.Name = "btUpdateSecQue";
+            this.btUpdateSecQue.Size = new System.Drawing.Size(115, 41);
+            this.btUpdateSecQue.TabIndex = 7;
+            this.btUpdateSecQue.Text = "Update";
+            this.btUpdateSecQue.UseVisualStyleBackColor = true;
+            this.btUpdateSecQue.Click += new System.EventHandler(this.btUpdateSecQue_Click);
+            // 
             // Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(1177, 702);
+            this.Controls.Add(this.btUpdateSecQue);
+            this.Controls.Add(this.tbSecQue3);
+            this.Controls.Add(this.tbSecQue2);
+            this.Controls.Add(this.tbSecQue1);
+            this.Controls.Add(this.cbSecQue3);
+            this.Controls.Add(this.labelSec3);
+            this.Controls.Add(this.cbSecQue2);
+            this.Controls.Add(this.labelSecQue2);
+            this.Controls.Add(this.cbSecQue1);
+            this.Controls.Add(this.labelSecurityQuestion);
+            this.Controls.Add(this.tbCurrentPassword);
+            this.Controls.Add(this.labelCurrentPassword);
             this.Controls.Add(this.labelLastName);
             this.Controls.Add(this.labelFirstName);
             this.Controls.Add(this.labeluname);
@@ -202,5 +329,17 @@ namespace HMSV2
         private System.Windows.Forms.Label labeluname;
         private System.Windows.Forms.Label labelFirstName;
         private System.Windows.Forms.Label labelLastName;
+        private System.Windows.Forms.Label labelCurrentPassword;
+        private System.Windows.Forms.TextBox tbCurrentPassword;
+        private System.Windows.Forms.Label labelSecurityQuestion;
+        private System.Windows.Forms.ComboBox cbSecQue1;
+        private System.Windows.Forms.ComboBox cbSecQue2;
+        private System.Windows.Forms.Label labelSecQue2;
+        private System.Windows.Forms.ComboBox cbSecQue3;
+        private System.Windows.Forms.Label labelSec3;
+        private System.Windows.Forms.TextBox tbSecQue1;
+        private System.Windows.Forms.TextBox tbSecQue2;
+        private System.Windows.Forms.TextBox tbSecQue3;
+        private System.Windows.Forms.Button btUpdateSecQue;
     }
 }

@@ -27,8 +27,8 @@ namespace HMSV2
 
             cmd.CommandText = "SELECT TRN, FirstName, LastName, DOB," +
                 "SEX, StreetAddress, City, Zip, Country, Email," +
-                "Contact, NextOfKin, NextOfKinContact, AppointmentDate," +
-                "AppointmentTime, Doctor from patients";
+                "Contact, NextOfKin, NextOfKinContact," +
+                "Doctor from patients";
             data = cmd.ExecuteReader();
             dt.Load(data);
             return dt;
@@ -51,11 +51,22 @@ namespace HMSV2
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            string trn = tbSearch.Text;
-            if (!trn.Trim().Equals(""))
+            string trn = Tools.trnmodifer(tbSearch.Text);
+            SQLiteConnection conn = DbConnection.CreateConnection();
+            SQLiteDataReader data;
+            SQLiteCommand cmd = conn.CreateCommand();
+            cmd.CommandText = "SELECT FirstName FROM patients WHERE TRN=@trn";
+            cmd.Parameters.AddWithValue("@trn", trn);
+            data = cmd.ExecuteReader();
+            if (!trn.Trim().Equals("") && data.HasRows)
+            {
                 openChildForm(new EditPatient(trn));
+                data.Close();
+            }  
             else
             {
+                MessageBox.Show("Patient not found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                tbSearch.Clear();
                 if (activeForm != null)
                 {
                     activeForm.Close();

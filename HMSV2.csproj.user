@@ -13,6 +13,9 @@
     <Compile Update="EditPatient.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>

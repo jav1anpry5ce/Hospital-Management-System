@@ -40,30 +40,23 @@ namespace HMSV2
             try
             {
                 data = cmd.ExecuteReader();
-                if (!data.HasRows)
+                while (data.Read())
                 {
-                    MessageBox.Show("Could not find patient!", "Error");
-                }
-                else
-                {
-                    while (data.Read())
-                    {
-                        tbTrn.Text = data.GetString(0);
-                        tbFirstName.Text = data.GetString(1);
-                        tbLastName.Text = data.GetString(2);
-                        dtpDOB.Value = Convert.ToDateTime(data.GetString(3));
-                        cbSex.Text = data.GetString(4);
-                        tbStreetAddress.Text = data.GetString(5);
-                        tbCity.Text = data.GetString(6);
-                        tbZip.Text = data.GetString(7);
-                        tbCountry.Text = data.GetString(8);
-                        tbEmail.Text = data.GetString(9);
-                        tbContact.Text = data.GetString(10);
-                        tbNOK.Text = data.GetString(11);
-                        tbNOKContact.Text = data.GetString(12);
-                        cbAdmitted.Text = data.GetString(13);
-                        tbDoctor.Text = data.GetString(14);
-                    }
+                    tbTrn.Text = data.GetString(0);
+                    tbFirstName.Text = data.GetString(1);
+                    tbLastName.Text = data.GetString(2);
+                    dtpDOB.Value = Convert.ToDateTime(data.GetString(3));
+                    cbSex.Text = data.GetString(4);
+                    tbStreetAddress.Text = data.GetString(5);
+                    tbCity.Text = data.GetString(6);
+                    tbZip.Text = data.GetString(7);
+                    tbCountry.Text = data.GetString(8);
+                    tbEmail.Text = data.GetString(9);
+                    tbContact.Text = data.GetString(10);
+                    tbNOK.Text = data.GetString(11);
+                    tbNOKContact.Text = data.GetString(12);
+                    cbAdmitted.Text = data.GetString(13);
+                    tbDoctor.Text = data.GetString(14);
                 }
             }
             catch

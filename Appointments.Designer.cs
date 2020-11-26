@@ -31,6 +31,8 @@ namespace HMSV2
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelTItle = new System.Windows.Forms.Panel();
             this.labelTitle = new System.Windows.Forms.Label();
             this.panelMakeAppointment = new System.Windows.Forms.Panel();
@@ -61,6 +63,7 @@ namespace HMSV2
             this.panelTItle.Controls.Add(this.labelTitle);
             this.panelTItle.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTItle.Location = new System.Drawing.Point(0, 0);
+            this.panelTItle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelTItle.Name = "panelTItle";
             this.panelTItle.Size = new System.Drawing.Size(1177, 47);
             this.panelTItle.TabIndex = 0;
@@ -89,15 +92,17 @@ namespace HMSV2
             this.panelMakeAppointment.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMakeAppointment.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panelMakeAppointment.Location = new System.Drawing.Point(0, 47);
+            this.panelMakeAppointment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMakeAppointment.Name = "panelMakeAppointment";
-            this.panelMakeAppointment.Size = new System.Drawing.Size(1177, 159);
+            this.panelMakeAppointment.Size = new System.Drawing.Size(1177, 126);
             this.panelMakeAppointment.TabIndex = 1;
             // 
             // btnMake
             // 
-            this.btnMake.Location = new System.Drawing.Point(466, 101);
+            this.btnMake.Location = new System.Drawing.Point(466, 83);
+            this.btnMake.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMake.Name = "btnMake";
-            this.btnMake.Size = new System.Drawing.Size(191, 36);
+            this.btnMake.Size = new System.Drawing.Size(191, 30);
             this.btnMake.TabIndex = 8;
             this.btnMake.Text = "Make Appointment";
             this.btnMake.UseVisualStyleBackColor = true;
@@ -105,7 +110,8 @@ namespace HMSV2
             // 
             // dtpTime
             // 
-            this.dtpTime.Location = new System.Drawing.Point(752, 55);
+            this.dtpTime.Location = new System.Drawing.Point(752, 45);
+            this.dtpTime.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpTime.Name = "dtpTime";
             this.dtpTime.Size = new System.Drawing.Size(323, 26);
             this.dtpTime.TabIndex = 7;
@@ -114,7 +120,7 @@ namespace HMSV2
             // 
             this.labelTime.AutoSize = true;
             this.labelTime.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelTime.Location = new System.Drawing.Point(696, 60);
+            this.labelTime.Location = new System.Drawing.Point(696, 50);
             this.labelTime.Name = "labelTime";
             this.labelTime.Size = new System.Drawing.Size(47, 21);
             this.labelTime.TabIndex = 6;
@@ -122,7 +128,8 @@ namespace HMSV2
             // 
             // dtpAppointmentDate
             // 
-            this.dtpAppointmentDate.Location = new System.Drawing.Point(752, 18);
+            this.dtpAppointmentDate.Location = new System.Drawing.Point(752, 15);
+            this.dtpAppointmentDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpAppointmentDate.Name = "dtpAppointmentDate";
             this.dtpAppointmentDate.Size = new System.Drawing.Size(323, 26);
             this.dtpAppointmentDate.TabIndex = 5;
@@ -131,7 +138,7 @@ namespace HMSV2
             // 
             this.labelDate.AutoSize = true;
             this.labelDate.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelDate.Location = new System.Drawing.Point(699, 21);
+            this.labelDate.Location = new System.Drawing.Point(699, 17);
             this.labelDate.Name = "labelDate";
             this.labelDate.Size = new System.Drawing.Size(44, 21);
             this.labelDate.TabIndex = 4;
@@ -139,7 +146,8 @@ namespace HMSV2
             // 
             // tbDoctor
             // 
-            this.tbDoctor.Location = new System.Drawing.Point(79, 54);
+            this.tbDoctor.Location = new System.Drawing.Point(79, 45);
+            this.tbDoctor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbDoctor.Name = "tbDoctor";
             this.tbDoctor.Size = new System.Drawing.Size(320, 26);
             this.tbDoctor.TabIndex = 3;
@@ -148,7 +156,7 @@ namespace HMSV2
             // 
             this.labelDoctor.AutoSize = true;
             this.labelDoctor.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelDoctor.Location = new System.Drawing.Point(12, 58);
+            this.labelDoctor.Location = new System.Drawing.Point(12, 48);
             this.labelDoctor.Name = "labelDoctor";
             this.labelDoctor.Size = new System.Drawing.Size(63, 21);
             this.labelDoctor.TabIndex = 2;
@@ -156,7 +164,8 @@ namespace HMSV2
             // 
             // tbTrn
             // 
-            this.tbTrn.Location = new System.Drawing.Point(79, 16);
+            this.tbTrn.Location = new System.Drawing.Point(79, 13);
+            this.tbTrn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbTrn.Name = "tbTrn";
             this.tbTrn.Size = new System.Drawing.Size(320, 26);
             this.tbTrn.TabIndex = 1;
@@ -165,7 +174,7 @@ namespace HMSV2
             // 
             this.labelTrn.AutoSize = true;
             this.labelTrn.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelTrn.Location = new System.Drawing.Point(12, 18);
+            this.labelTrn.Location = new System.Drawing.Point(12, 15);
             this.labelTrn.Name = "labelTrn";
             this.labelTrn.Size = new System.Drawing.Size(48, 21);
             this.labelTrn.TabIndex = 0;
@@ -179,15 +188,17 @@ namespace HMSV2
             this.panelViewAppointments.Controls.Add(this.labelSrc);
             this.panelViewAppointments.Controls.Add(this.dgvAppointments);
             this.panelViewAppointments.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelViewAppointments.Location = new System.Drawing.Point(0, 206);
+            this.panelViewAppointments.Location = new System.Drawing.Point(0, 173);
+            this.panelViewAppointments.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelViewAppointments.Name = "panelViewAppointments";
-            this.panelViewAppointments.Size = new System.Drawing.Size(1177, 498);
+            this.panelViewAppointments.Size = new System.Drawing.Size(1177, 527);
             this.panelViewAppointments.TabIndex = 2;
             // 
             // btnView
             // 
             this.btnView.Font = new System.Drawing.Font("Sitka Text", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnView.Location = new System.Drawing.Point(549, 6);
+            this.btnView.Location = new System.Drawing.Point(549, 0);
+            this.btnView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnView.Name = "btnView";
             this.btnView.Size = new System.Drawing.Size(125, 29);
             this.btnView.TabIndex = 4;
@@ -198,9 +209,10 @@ namespace HMSV2
             // btnSearch
             // 
             this.btnSearch.Font = new System.Drawing.Font("Sitka Text", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSearch.Location = new System.Drawing.Point(429, 7);
+            this.btnSearch.Location = new System.Drawing.Point(429, 0);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 28);
+            this.btnSearch.Size = new System.Drawing.Size(75, 29);
             this.btnSearch.TabIndex = 3;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -210,9 +222,10 @@ namespace HMSV2
             // 
             this.dtpAppointments.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.dtpAppointments.Location = new System.Drawing.Point(79, 6);
+            this.dtpAppointments.Location = new System.Drawing.Point(79, 3);
+            this.dtpAppointments.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpAppointments.Name = "dtpAppointments";
-            this.dtpAppointments.Size = new System.Drawing.Size(287, 28);
+            this.dtpAppointments.Size = new System.Drawing.Size(287, 26);
             this.dtpAppointments.TabIndex = 2;
             // 
             // labelSrc
@@ -221,7 +234,7 @@ namespace HMSV2
             | System.Windows.Forms.AnchorStyles.Left)));
             this.labelSrc.AutoSize = true;
             this.labelSrc.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelSrc.Location = new System.Drawing.Point(12, 11);
+            this.labelSrc.Location = new System.Drawing.Point(12, 8);
             this.labelSrc.Name = "labelSrc";
             this.labelSrc.Size = new System.Drawing.Size(61, 21);
             this.labelSrc.TabIndex = 1;
@@ -233,25 +246,42 @@ namespace HMSV2
             this.dgvAppointments.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvAppointments.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvAppointments.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAppointments.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvAppointments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAppointments.Location = new System.Drawing.Point(12, 35);
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAppointments.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvAppointments.Location = new System.Drawing.Point(12, 32);
+            this.dgvAppointments.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvAppointments.Name = "dgvAppointments";
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dgvAppointments.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dgvAppointments.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvAppointments.RowTemplate.Height = 25;
             this.dgvAppointments.RowTemplate.ReadOnly = true;
-            this.dgvAppointments.Size = new System.Drawing.Size(1153, 447);
+            this.dgvAppointments.Size = new System.Drawing.Size(1153, 481);
             this.dgvAppointments.TabIndex = 0;
             // 
             // Appointments
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1177, 702);
             this.Controls.Add(this.panelViewAppointments);
             this.Controls.Add(this.panelMakeAppointment);
             this.Controls.Add(this.panelTItle);
-            this.Font = new System.Drawing.Font("Sitka Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Appointments";
             this.Text = "Appointments";

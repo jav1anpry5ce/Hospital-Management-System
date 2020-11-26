@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainFrom));
             this.panelSide = new System.Windows.Forms.Panel();
+            this.panelHighlight = new System.Windows.Forms.Panel();
             this.btnProfile = new System.Windows.Forms.Button();
             this.btnAddEmployee = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
@@ -45,6 +46,7 @@
             // panelSide
             // 
             this.panelSide.AutoScroll = true;
+            this.panelSide.Controls.Add(this.panelHighlight);
             this.panelSide.Controls.Add(this.btnProfile);
             this.panelSide.Controls.Add(this.btnAddEmployee);
             this.panelSide.Controls.Add(this.btnLogout);
@@ -57,35 +59,41 @@
             this.panelSide.Location = new System.Drawing.Point(0, 0);
             this.panelSide.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelSide.Name = "panelSide";
-            this.panelSide.Size = new System.Drawing.Size(191, 702);
+            this.panelSide.Size = new System.Drawing.Size(198, 702);
             this.panelSide.TabIndex = 0;
+            // 
+            // panelHighlight
+            // 
+            this.panelHighlight.BackColor = System.Drawing.Color.LightBlue;
+            this.panelHighlight.Location = new System.Drawing.Point(0, 159);
+            this.panelHighlight.Name = "panelHighlight";
+            this.panelHighlight.Size = new System.Drawing.Size(10, 23);
+            this.panelHighlight.TabIndex = 0;
             // 
             // btnProfile
             // 
-            this.btnProfile.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnProfile.FlatAppearance.BorderSize = 0;
             this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProfile.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.btnProfile.Location = new System.Drawing.Point(0, 613);
+            this.btnProfile.Location = new System.Drawing.Point(0, 646);
             this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(191, 29);
+            this.btnProfile.Size = new System.Drawing.Size(198, 29);
             this.btnProfile.TabIndex = 6;
-            this.btnProfile.Text = "Profile";
+            this.btnProfile.Text = " Profile";
             this.btnProfile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProfile.UseVisualStyleBackColor = true;
             this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
             // btnAddEmployee
             // 
-            this.btnAddEmployee.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnAddEmployee.FlatAppearance.BorderSize = 0;
             this.btnAddEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddEmployee.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.btnAddEmployee.Location = new System.Drawing.Point(0, 642);
+            this.btnAddEmployee.Location = new System.Drawing.Point(0, 619);
             this.btnAddEmployee.Name = "btnAddEmployee";
-            this.btnAddEmployee.Size = new System.Drawing.Size(191, 30);
+            this.btnAddEmployee.Size = new System.Drawing.Size(198, 30);
             this.btnAddEmployee.TabIndex = 5;
-            this.btnAddEmployee.Text = "Add Employee";
+            this.btnAddEmployee.Text = " Add Employee";
             this.btnAddEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAddEmployee.UseVisualStyleBackColor = true;
             this.btnAddEmployee.Visible = false;
@@ -93,15 +101,15 @@
             // 
             // btnLogout
             // 
-            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnLogout.FlatAppearance.BorderSize = 0;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogout.Location = new System.Drawing.Point(0, 672);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(191, 30);
+            this.btnLogout.Size = new System.Drawing.Size(198, 30);
             this.btnLogout.TabIndex = 7;
-            this.btnLogout.Text = "Logout";
+            this.btnLogout.Text = " Logout";
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
@@ -114,9 +122,9 @@
             this.btnAdPat.ForeColor = System.Drawing.Color.LightSlateGray;
             this.btnAdPat.Location = new System.Drawing.Point(0, 182);
             this.btnAdPat.Name = "btnAdPat";
-            this.btnAdPat.Size = new System.Drawing.Size(191, 30);
+            this.btnAdPat.Size = new System.Drawing.Size(198, 30);
             this.btnAdPat.TabIndex = 4;
-            this.btnAdPat.Text = "Admit Patient";
+            this.btnAdPat.Text = " Admit Patient";
             this.btnAdPat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAdPat.UseVisualStyleBackColor = true;
             this.btnAdPat.Click += new System.EventHandler(this.btnAdPat_Click);
@@ -129,9 +137,9 @@
             this.btnMkApt.ForeColor = System.Drawing.Color.LightSlateGray;
             this.btnMkApt.Location = new System.Drawing.Point(0, 152);
             this.btnMkApt.Name = "btnMkApt";
-            this.btnMkApt.Size = new System.Drawing.Size(191, 30);
+            this.btnMkApt.Size = new System.Drawing.Size(198, 30);
             this.btnMkApt.TabIndex = 3;
-            this.btnMkApt.Text = "Appointments";
+            this.btnMkApt.Text = " Appointments";
             this.btnMkApt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMkApt.UseVisualStyleBackColor = true;
             this.btnMkApt.Click += new System.EventHandler(this.btnMkApt_Click);
@@ -144,9 +152,9 @@
             this.btnRegPat.ForeColor = System.Drawing.Color.LightSlateGray;
             this.btnRegPat.Location = new System.Drawing.Point(0, 122);
             this.btnRegPat.Name = "btnRegPat";
-            this.btnRegPat.Size = new System.Drawing.Size(191, 30);
+            this.btnRegPat.Size = new System.Drawing.Size(198, 30);
             this.btnRegPat.TabIndex = 2;
-            this.btnRegPat.Text = "Register Patient";
+            this.btnRegPat.Text = " Register Patient";
             this.btnRegPat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegPat.UseVisualStyleBackColor = true;
             this.btnRegPat.Click += new System.EventHandler(this.btnRegPat_Click);
@@ -159,9 +167,9 @@
             this.btnPatMgt.ForeColor = System.Drawing.Color.LightSlateGray;
             this.btnPatMgt.Location = new System.Drawing.Point(0, 92);
             this.btnPatMgt.Name = "btnPatMgt";
-            this.btnPatMgt.Size = new System.Drawing.Size(191, 30);
+            this.btnPatMgt.Size = new System.Drawing.Size(198, 30);
             this.btnPatMgt.TabIndex = 1;
-            this.btnPatMgt.Text = "Patient Management";
+            this.btnPatMgt.Text = " Patient Management";
             this.btnPatMgt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPatMgt.UseVisualStyleBackColor = true;
             this.btnPatMgt.Click += new System.EventHandler(this.btnPatMgt_Click);
@@ -172,15 +180,15 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(191, 92);
+            this.panel2.Size = new System.Drawing.Size(198, 92);
             this.panel2.TabIndex = 0;
             // 
             // panelChildForm
             // 
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelChildForm.Location = new System.Drawing.Point(191, 0);
+            this.panelChildForm.Location = new System.Drawing.Point(198, 0);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(1177, 702);
+            this.panelChildForm.Size = new System.Drawing.Size(1170, 702);
             this.panelChildForm.TabIndex = 1;
             // 
             // MainFrom
@@ -217,5 +225,6 @@
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.Button btnAddEmployee;
         private System.Windows.Forms.Button btnProfile;
+        private System.Windows.Forms.Panel panelHighlight;
     }
 }

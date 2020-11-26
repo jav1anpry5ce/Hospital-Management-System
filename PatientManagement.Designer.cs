@@ -56,15 +56,17 @@
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panelMain.Location = new System.Drawing.Point(0, 0);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(1177, 702);
             this.panelMain.TabIndex = 0;
             // 
             // btnView
             // 
-            this.btnView.Location = new System.Drawing.Point(562, 49);
+            this.btnView.Location = new System.Drawing.Point(497, 61);
+            this.btnView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(102, 40);
+            this.btnView.Size = new System.Drawing.Size(93, 30);
             this.btnView.TabIndex = 6;
             this.btnView.Text = "View All";
             this.btnView.UseVisualStyleBackColor = true;
@@ -73,9 +75,10 @@
             // panelView
             // 
             this.panelView.Controls.Add(this.dataGridViewPatient);
-            this.panelView.Location = new System.Drawing.Point(0, 95);
+            this.panelView.Location = new System.Drawing.Point(0, 102);
+            this.panelView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelView.Name = "panelView";
-            this.panelView.Size = new System.Drawing.Size(1177, 607);
+            this.panelView.Size = new System.Drawing.Size(1177, 600);
             this.panelView.TabIndex = 5;
             // 
             // dataGridViewPatient
@@ -85,20 +88,22 @@
             this.dataGridViewPatient.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewPatient.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewPatient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPatient.Location = new System.Drawing.Point(13, 13);
+            this.dataGridViewPatient.Location = new System.Drawing.Point(12, 10);
+            this.dataGridViewPatient.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewPatient.Name = "dataGridViewPatient";
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dataGridViewPatient.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewPatient.RowTemplate.Height = 25;
             this.dataGridViewPatient.RowTemplate.ReadOnly = true;
-            this.dataGridViewPatient.Size = new System.Drawing.Size(1152, 582);
+            this.dataGridViewPatient.Size = new System.Drawing.Size(1153, 579);
             this.dataGridViewPatient.TabIndex = 3;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(442, 49);
+            this.btnSearch.Location = new System.Drawing.Point(396, 61);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(82, 40);
+            this.btnSearch.Size = new System.Drawing.Size(75, 30);
             this.btnSearch.TabIndex = 4;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -106,16 +111,17 @@
             // 
             // tbSearch
             // 
-            this.tbSearch.Location = new System.Drawing.Point(80, 57);
+            this.tbSearch.Location = new System.Drawing.Point(73, 64);
+            this.tbSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbSearch.Name = "tbSearch";
-            this.tbSearch.Size = new System.Drawing.Size(324, 26);
+            this.tbSearch.Size = new System.Drawing.Size(295, 26);
             this.tbSearch.TabIndex = 2;
             // 
             // labelSrc
             // 
             this.labelSrc.AutoSize = true;
             this.labelSrc.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelSrc.Location = new System.Drawing.Point(13, 60);
+            this.labelSrc.Location = new System.Drawing.Point(6, 69);
             this.labelSrc.Name = "labelSrc";
             this.labelSrc.Size = new System.Drawing.Size(61, 21);
             this.labelSrc.TabIndex = 1;
@@ -126,15 +132,16 @@
             this.panelTop.Controls.Add(this.labelTitle);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
+            this.panelTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1177, 48);
+            this.panelTop.Size = new System.Drawing.Size(1177, 54);
             this.panelTop.TabIndex = 0;
             // 
             // labelTitle
             // 
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("Sitka Text", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelTitle.Location = new System.Drawing.Point(466, 0);
+            this.labelTitle.Location = new System.Drawing.Point(461, 4);
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(299, 42);
             this.labelTitle.TabIndex = 0;
@@ -142,11 +149,11 @@
             // 
             // PatientManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1177, 702);
             this.Controls.Add(this.panelMain);
-            this.Font = new System.Drawing.Font("Sitka Text", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PatientManagement";
             this.Text = "PatientManagement";

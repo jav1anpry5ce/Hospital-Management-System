@@ -93,7 +93,7 @@ namespace HMSV2
             // 
             // tbRoom
             // 
-            this.tbRoom.Location = new System.Drawing.Point(854, 27);
+            this.tbRoom.Location = new System.Drawing.Point(855, 32);
             this.tbRoom.Name = "tbRoom";
             this.tbRoom.Size = new System.Drawing.Size(264, 26);
             this.tbRoom.TabIndex = 3;
@@ -102,7 +102,7 @@ namespace HMSV2
             // 
             this.labelRoom.AutoSize = true;
             this.labelRoom.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelRoom.Location = new System.Drawing.Point(726, 30);
+            this.labelRoom.Location = new System.Drawing.Point(727, 35);
             this.labelRoom.Name = "labelRoom";
             this.labelRoom.Size = new System.Drawing.Size(122, 21);
             this.labelRoom.TabIndex = 2;
@@ -110,7 +110,7 @@ namespace HMSV2
             // 
             // tbTrn2
             // 
-            this.tbTrn2.Location = new System.Drawing.Point(58, 25);
+            this.tbTrn2.Location = new System.Drawing.Point(58, 32);
             this.tbTrn2.Name = "tbTrn2";
             this.tbTrn2.Size = new System.Drawing.Size(276, 26);
             this.tbTrn2.TabIndex = 1;
@@ -119,7 +119,7 @@ namespace HMSV2
             // 
             this.labelTrn2.AutoSize = true;
             this.labelTrn2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelTrn2.Location = new System.Drawing.Point(4, 27);
+            this.labelTrn2.Location = new System.Drawing.Point(4, 35);
             this.labelTrn2.Name = "labelTrn2";
             this.labelTrn2.Size = new System.Drawing.Size(48, 21);
             this.labelTrn2.TabIndex = 0;
@@ -140,9 +140,9 @@ namespace HMSV2
             // 
             // btnView
             // 
-            this.btnView.Location = new System.Drawing.Point(483, 14);
+            this.btnView.Location = new System.Drawing.Point(483, 6);
             this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(75, 31);
+            this.btnView.Size = new System.Drawing.Size(75, 39);
             this.btnView.TabIndex = 4;
             this.btnView.Text = "View All";
             this.btnView.UseVisualStyleBackColor = true;
@@ -150,9 +150,9 @@ namespace HMSV2
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(368, 14);
+            this.btnSearch.Location = new System.Drawing.Point(368, 6);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 31);
+            this.btnSearch.Size = new System.Drawing.Size(75, 39);
             this.btnSearch.TabIndex = 3;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -160,7 +160,7 @@ namespace HMSV2
             // 
             // tbTrn
             // 
-            this.tbTrn.Location = new System.Drawing.Point(58, 11);
+            this.tbTrn.Location = new System.Drawing.Point(58, 14);
             this.tbTrn.Name = "tbTrn";
             this.tbTrn.Size = new System.Drawing.Size(276, 26);
             this.tbTrn.TabIndex = 2;
@@ -169,7 +169,7 @@ namespace HMSV2
             // 
             this.labelTrn.AutoSize = true;
             this.labelTrn.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelTrn.Location = new System.Drawing.Point(4, 14);
+            this.labelTrn.Location = new System.Drawing.Point(4, 16);
             this.labelTrn.Name = "labelTrn";
             this.labelTrn.Size = new System.Drawing.Size(48, 21);
             this.labelTrn.TabIndex = 1;
@@ -177,11 +177,13 @@ namespace HMSV2
             // 
             // dgvAdmitted
             // 
+            this.dgvAdmitted.AllowUserToOrderColumns = true;
             this.dgvAdmitted.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvAdmitted.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvAdmitted.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAdmitted.Location = new System.Drawing.Point(12, 61);
             this.dgvAdmitted.Name = "dgvAdmitted";
+            this.dgvAdmitted.ReadOnly = true;
             this.dgvAdmitted.RowTemplate.Height = 25;
             this.dgvAdmitted.RowTemplate.ReadOnly = true;
             this.dgvAdmitted.Size = new System.Drawing.Size(1153, 429);

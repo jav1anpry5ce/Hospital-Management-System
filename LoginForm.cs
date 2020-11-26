@@ -53,7 +53,6 @@ namespace HMSV2
 
             while (data.Read())
             {
-                    
                 string pwd = data.GetString(0);
                 isSuperUser = data.GetString(1);
                 if (BCrypt.Net.BCrypt.Verify(password, pwd))
@@ -73,13 +72,38 @@ namespace HMSV2
 
         private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (e.CloseReason == CloseReason.UserClosing)
+            Application.Exit();
+        }
+
+        private void txbPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
             {
-                DialogResult response = MessageBox.Show("Are you sure you want to exit?", "Exit", MessageBoxButtons.YesNo);
-                if (response.Equals(DialogResult.Yes))
-                    Application.Exit();
-                else
-                    e.Cancel = true;
+                btnLogin_Click(sender, e);
+            }
+        }
+
+        private void linkLabelForgotPwd_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            string username = txbUsername.Text;
+            SQLiteConnection conn = DbConnection.CreateConnection();
+            SQLiteDataReader data;
+            SQLiteCommand cmd = conn.CreateCommand();
+            cmd.CommandText = "SELECT * FROM users WHERE username=@username";
+            cmd.Parameters.AddWithValue("@username", username);
+            data = cmd.ExecuteReader();
+            if (!username.Trim().Equals("") && data.Read())
+            {
+                Form forgotPwd = new ForgetPassword(username);
+                forgotPwd.Show();
+                this.Hide();
+                data.Close();
+                conn.Close();
+            }
+            else
+            {
+                MessageBox.Show("User not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txbUsername.Clear();
             }
         }
     }
